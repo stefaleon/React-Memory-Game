@@ -20,3 +20,9 @@ $ create-react-app react-bands
 ## 01 Cards
 
 * Initialize state.
+
+
+&nbsp;
+## 02 Card component
+
+* Create the Card component and display cards in App.

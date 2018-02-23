@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Card from './Card';
 
 const CardState = {
   HIDING: 0,
@@ -44,15 +45,18 @@ class App extends Component {
     ];
 
     cards = shuffle(cards);
-    this.state = { cards }
+    this.state = { cards };
   }
 
 
   render() {
+    const cards = this.state.cards.map((card) => (
+      <Card key={card.id} />
+    ));
 
     return (
       <div className="App">
-        Will display Card components.
+        {cards}
       </div>
     );
   }
