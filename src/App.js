@@ -51,7 +51,11 @@ class App extends Component {
 
   render() {
     const cards = this.state.cards.map((card) => (
-      <Card key={card.id} />
+      <Card
+        key={card.id}
+        bgcolor={card.backgroundColor}
+        showing={true}        
+      />
     ));
 
     return (

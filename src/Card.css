@@ -6,4 +6,5 @@
   display: inline-block;
   cursor: pointer;
   border-radius: 5px;
+  border: 1px solid lightgrey;
 }

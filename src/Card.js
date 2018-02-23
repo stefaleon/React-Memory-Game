@@ -4,8 +4,18 @@ import './Card.css';
 
 
 const Card = props => {
+
+  const cardStyle = {};
+  if (props.showing) {
+    cardStyle.backgroundColor = props.bgcolor;
+  }
+
   return (
-    <div className="card">    
+    <div
+      className="card"
+      style={cardStyle}
+      onClick={props.onCardClick}
+    >
     </div>
   );
 }

@@ -26,3 +26,10 @@ $ create-react-app react-bands
 ## 02 Card component
 
 * Create the Card component and display cards in App.
+
+
+&nbsp;
+## 03 cardStyle
+
+* Add the cardStyle object which will conditionally provide the cards' background color.
+* Pass the *bgcolor* and *showing* props from App to the Card components. 
