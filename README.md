@@ -32,4 +32,18 @@ $ create-react-app react-bands
 ## 03 cardStyle
 
 * Add the cardStyle object which will conditionally provide the cards' background color.
-* Pass the *bgcolor* and *showing* props from App to the Card components. 
+* Pass the *bgcolor* and *showing* props from App to the Card components.
+
+
+&nbsp;
+## 04 toggle hide-show
+
+* Expose the card click event as a method prop passed from App to Card.
+* Configure handleClick to toggle between hiding and the selected card.
+
+
+
+&nbsp;
+## 05 New game
+
+* Set the new game handler.

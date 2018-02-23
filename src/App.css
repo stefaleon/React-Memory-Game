@@ -1,7 +1,24 @@
 .App {
   text-align: center;
   margin: auto;
-  margin-top: 2em;
+  margin-top: .3em;
+  width: 470px;
+  min-height: 600px;
+  padding: 5px;
+  padding-top: 10px;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  -webkit-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+  -moz-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+  box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+}
+
+
+.cardboard {
+  text-align: center;
+  margin: auto;
+  margin-top: .5em;
   max-width: 450px;
   min-height: 450px;
   padding: 5px;
@@ -9,4 +26,22 @@
   background-color: #222;
   border: 1px solid lightgrey;
   border-radius: 5px;
+}
+
+.new-game {
+  margin: auto;
+  margin-top: 2em;
+  width: 120px;
+  height: 28px;
+  line-height: 28px;
+  padding: 3px;
+  color: white;
+  background-color: black;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  -webkit-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+  -moz-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+  box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
 }

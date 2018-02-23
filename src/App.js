@@ -46,6 +46,31 @@ class App extends Component {
 
     cards = shuffle(cards);
     this.state = { cards };
+
+    this.handleClick = this.handleClick.bind(this);
+    this.handleNewGame = this.handleNewGame.bind(this);
+  }
+
+  handleNewGame() {
+    let cards = this.state.cards.map( c => ({
+      ...c,
+      cardState: CardState.HIDING
+    }));
+    cards = shuffle(cards);
+    this.setState({cards});
+  }
+
+  handleClick(id) {
+    this.setState(prevState => {
+      const cards = prevState.cards.map( c => (
+        c.id === id ? {
+          ...c,
+          cardState: c.cardState === CardState.HIDING ?
+                    CardState.SHOWING : CardState.HIDING
+        } : c
+      ));
+      return {cards};
+    });
   }
 
 
@@ -54,13 +79,19 @@ class App extends Component {
       <Card
         key={card.id}
         bgcolor={card.backgroundColor}
-        showing={true}        
+        showing={true}
+        onCardClick={() => this.handleClick(card.id)}
       />
     ));
 
     return (
       <div className="App">
-        {cards}
+        <div className="cardboard">
+          {cards}
+        </div>
+        <div className="new-game" onClick={this.handleNewGame}>
+          New Game
+        </div>
       </div>
     );
   }
