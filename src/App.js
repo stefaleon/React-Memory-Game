@@ -68,7 +68,7 @@ class App extends Component {
           cardState: c.cardState === CardState.HIDING ?
                     CardState.SHOWING : CardState.HIDING
         } : c
-      ));
+      ));      
       return {cards};
     });
   }
@@ -79,7 +79,7 @@ class App extends Component {
       <Card
         key={card.id}
         bgcolor={card.backgroundColor}
-        showing={true}
+        showing={card.cardState !== CardState.HIDING}
         onCardClick={() => this.handleClick(card.id)}
       />
     ));
