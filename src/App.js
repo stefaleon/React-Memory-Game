@@ -38,8 +38,8 @@ class App extends Component {
       { id: 9, cardState: CardState.HIDING, backgroundColor: 'magenta' },
       { id: 10, cardState: CardState.HIDING, backgroundColor: 'yellow' },
       { id: 11, cardState: CardState.HIDING, backgroundColor: 'yellow' },
-      { id: 12, cardState: CardState.HIDING, backgroundColor: 'black' },
-      { id: 13, cardState: CardState.HIDING, backgroundColor: 'black' },
+      { id: 12, cardState: CardState.HIDING, backgroundColor: 'orange' },
+      { id: 13, cardState: CardState.HIDING, backgroundColor: 'orange' },
       { id: 14, cardState: CardState.HIDING, backgroundColor: 'white' },
       { id: 15, cardState: CardState.HIDING, backgroundColor: 'white' }
     ];
@@ -68,7 +68,7 @@ class App extends Component {
           cardState: c.cardState === CardState.HIDING ?
                     CardState.SHOWING : CardState.HIDING
         } : c
-      ));      
+      ));
       return {cards};
     });
   }
