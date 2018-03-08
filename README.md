@@ -93,3 +93,17 @@ $ npm run deploy
 **Finally, make sure GitHub Pages option in your GitHub project settings is set to use the gh-pages branch**
 
 * Step 5: Commit and Push
+
+
+
+
+&nbsp;
+## 07 Add the game logic
+
+* Add the *noClick* piece of state.
+* Change *handleClick*.
+  * It now includes the *mapCardState* helper, which maps through the cards and applies the *newCardState* conditionally.
+  * Finds the card of interest.
+  * Calls *mapCardState* in order to return the cards that are showing.
+  * If two showing cards have the same color, then uses *mapCardState* to set their state to MATCHING.
+  * Otherwise, hides the two cards, by using *mapCardState* to set their state to HIDING, after a delay.
