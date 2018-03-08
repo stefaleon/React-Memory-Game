@@ -16,15 +16,13 @@
 
 
 .cardboard {
-  text-align: center;
-  margin: auto;
-  margin-top: .5em;  
-  min-height: 450px;
+  margin-top: .5em;
   padding: 5px;
   padding-top: 10px;
   background-color: #222;
   border: 1px solid lightgrey;
   border-radius: 5px;
+  text-align: center;
 }
 
 .new-game {
